@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import '../../styles/logModal.css';
 import { useState, useEffect } from 'react';
 import LogModalTab from '../tab/LogModalTab';
+import Button from 'react-bootstrap/Button';
 
 
 const LogModal = ({ closeModal, tab}) => {
@@ -20,9 +21,12 @@ const LogModal = ({ closeModal, tab}) => {
 
     return (
       <div className="modal-overlay">
-        <div className="modal-content">
+        <div className="modal-content" style={{display:'flex', flexDirection:'column',  alignItems:'center'}}>
+            <div className="button-container">
+                <Button className="Button" variant='dark' onClick={closeModal} style={{marginBottom:'20px'}}>X</Button>
+            </div>
             <LogModalTab onTabClick={handleTabClick} activeTab={activeTab} ></LogModalTab>
-            <button onClick={closeModal}>Close</button>
+            
         </div>
       </div>
     );
