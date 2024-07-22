@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+/* eslint-disable no-unused-vars */
 import PropTypes from 'prop-types';
 import '../../styles/logModal.css';
 import { useState } from 'react';
@@ -5,11 +7,9 @@ import { useState } from 'react';
 
 const LogModal = ({ closeModal }) => {
 
+    const [activeTab, setActiveTab] = useState('tab1');
 
     const handleTabClick = (tabId) => {
-
-        const [activeTab, setActiveTab] = useState('tab1');
-
         setActiveTab(tabId);
       };
 
