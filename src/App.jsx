@@ -9,7 +9,7 @@ function App() {
     <>
       
       <div className="d-flex flex-column min-vh-100">
-        <Header/>
+          <Header/>
             <div className="flex-grow-1">
                 {/* Contenido de la página */}
             </div>
