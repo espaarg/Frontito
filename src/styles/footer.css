@@ -1,0 +1,10 @@
+
+.contenedor-footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
